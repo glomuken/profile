@@ -1,2 +1,175 @@
 <!DOCTYPE html>
-<h1>Hello World</h1>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K.G Mukendi - Portfolio</title>
+    <link rel="icon" href="media/favicon.png" />
+    <style>
+        /* Custom theme styles */
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+
+        a {
+            color: purple;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: purple;
+            padding: 1em;
+            text-align: left;
+            color: white;
+            display: flex; /* Add this line to enable flex layout */
+            align-items: center; /* Center items vertically in the flex container */
+            padding-top: 2%;
+        }
+
+        #header-icon {
+            width: 30px; /* Set the width of the icon */
+            height: 30px; /* Set the height of the icon */
+            margin-right: 10px; /* Add margin to the right of the icon */
+        }
+
+        h1, h3 {
+            color: white; /* Text color */
+            font-weight: bold; /* Bold text */
+            margin: 0; /* Remove default margin */
+        }
+
+        nav {
+            position: fixed; /* Fixed position to keep it in place */
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: black; /* Change background color */
+            text-align: right;
+            z-index: 1000; /* Ensure it's above other elements */
+        }
+
+        nav a {
+            color: white; /* Change link color */
+            margin: 0 1em;
+        }
+
+        section {
+            position: relative;
+            padding: 2em;
+            margin-top: 60px; /* Adjust margin to accommodate fixed menu */
+            text-align: center; /* Center text within the section */
+        }
+
+        video {
+            border: 5px solid transparent;
+            border-radius: 10px;
+            width: 50%;
+            display: block;
+            margin: 0; 
+        }
+
+        .hi-text {
+            position: absolute;
+            top: 0;
+            left: 37%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 7em;
+            text-align: center;
+        }
+
+        .descrip {
+            position: absolute;
+            top: 29%;
+            left: 53%; /* Adjust as needed */
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 1.5em;
+            text-align: left;
+        }
+
+        button{
+            border-color: rgb(222, 70, 222);
+            background-color: black;
+            color: purple;
+            border-radius: 10em;
+            cursor: pointer;
+            width: 10em;
+            height: 3em;
+            border-width: 0.3em;
+            font-weight: 300;
+        }
+
+        footer {
+            position: fixed; /* Fixed position to keep it in place */
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: purple; /* Change background color */
+            color: white;
+            padding: 0em;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 1. Header -->
+    <header>
+        <img id="header-icon" src="media/favicon.png" alt="Icon">
+        <div>
+            <h1>Gloria Kamwanya Mukendi</h1>
+            <h3>Software Developer | Tutor | Social Media Coordinator</h3>
+        </div>
+    </header>
+
+    <!-- 2. Navigation Menu -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="skills.html">Skills</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section>
+        <video id="video" autoplay loop muted>
+            <source src="media/hi.mp4" type="video/mp4">
+            Your browser does not support the video.
+        </video>
+        <div class="hi-text">Hello!</div>
+        <div class="descrip">
+            <p>My name is Gloria I am a 21 year old Developer, Tutor and Social Media Coordinator. 
+                Although I am young my experiences throughout and after high school have equipped me to be reliable,
+                hardworking and trustworthy. 
+            </p>
+            <a href="about.html">
+                <button><strong>View More</strong></button>
+            </a>
+         </div>
+    </section>
+
+    <!-- 3. Footer -->
+    <footer>
+        <p>&copy; 2024 K.G Mukendi. All Rights Reserved.</p>
+        <p>Privacy Policy | Terms of Use</p>
+    </footer>
+
+</body>
+
+</html>

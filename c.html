@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add your custom styles if needed -->
+
+    <style>
+        /* Custom theme styles */
+        body {
+            background-color: black;
+            color: purple;
+            font-family: 'Arial', sans-serif;
+        }
+
+        a {
+            color: purple;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: purple;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            margin: 1em 0;
+        }
+
+        nav a {
+            margin: 0 1em;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        footer {
+            background-color: purple;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 1. Header -->
+    <header>
+        <h1>Your Name</h1>
+        <p>Brief overview of your skills and expertise.</p>
+    </header>
+
+    <!-- 2. Navigation Menu -->
+    <nav>
+        <a href="#homepage">Home</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#skills">Skills</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- 3. Sections -->
+
+    <section id="homepage">
+        <h2>Home</h2>
+        <p>Brief overview of your skills and expertise.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Your personal bio and background go here.</p>
+        <p>Education, professional experience, and interests.</p>
+    </section>
+
+    <section id="resume">
+        <h2>Resume/CV</h2>
+        <!-- Your detailed resume content -->
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <!-- Showcase your projects with descriptions, roles, and outcomes -->
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <!-- List of technical and soft skills -->
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <!-- Quotes or testimonials from colleagues, clients, or supervisors -->
+    </section>
+
+    <section id="blog">
+        <h2>Blog/Articles</h2>
+        <!-- Your blog posts or articles -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <!-- Provide multiple ways to contact you -->
+    </section>
+
+    <!-- 4. Footer -->
+    <footer>
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        <p>Privacy Policy | Terms of Use</p>
+    </footer>
+
+    <script>
+        // Smooth scroll to section
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
