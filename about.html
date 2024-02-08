@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K.G Mukendi - Portfolio</title>
+    <link rel="icon" href="media/favicon.png" />
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-y: scroll; /* Make the page scrollable */
+            height: 100vh; 
+        }
+        a {
+            color: purple;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: purple;
+            padding: 1em;
+            text-align: left;
+            color: white;
+            display: flex; /* Add this line to enable flex layout */
+            align-items: center; /* Center items vertically in the flex container */
+            padding-top: 2%;
+            width: 100%;
+        }
+
+        #header-icon {
+            width: 30px; /* Set the width of the icon */
+            height: 30px; /* Set the height of the icon */
+            margin-right: 10px; /* Add margin to the right of the icon */
+            padding-left: 20px;
+        }
+        
+
+        h1, h3 {
+            color: white; /* Text color */
+            font-weight: bold; /* Bold text */
+            margin: 0; /* Remove default margin */
+        }
+
+        nav {
+            position: fixed; /* Fixed position to keep it in place */
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: black; /* Change background color */
+            text-align: right;
+            z-index: 1000; /* Ensure it's above other elements */
+        }
+
+        nav a {
+            color: white; /* Change link color */
+            margin: 0 1em;
+        }
+
+        section {
+            position: relative;
+            padding: 2em;
+            margin-top: 5px; /* Adjust margin to accommodate fixed menu */
+            text-align: left; /* Center text within the section */
+        }
+
+        #section2 {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            text-align: left;
+        }
+
+        .pic1 {
+            max-width: 50%;
+            border-radius: 200px; /* Added 'px' unit for border-radius */
+            border: 2px solid purple; /* Set border width and color */
+            margin-right: 20px;
+        }
+
+        .sct2txt {
+            font-weight: lighter;
+            max-width: 800px; /* Added max-width for the text block */
+
+        }
+
+        .gif1 {
+            max-width: 30%;
+            margin-left: 5px;
+        }
+
+        #section2 div {
+            margin-top: 5px; /* Adjusted margin to move the whole content higher */
+        }
+
+        button{
+            border-color: rgb(222, 70, 222);
+            background-color: black;
+            color: purple;
+            border-radius: 10em;
+            cursor: pointer;
+            width: 10em;
+            height: 3em;
+            border-width: 0.3em;
+            font-weight: 300;
+        }
+
+        footer {
+            position: fixed; /* Fixed position to keep it in place */
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: purple; /* Change background color */
+            color: white;
+            padding: 0em;
+            text-align: center;
+        }
+        p {
+            font: 1.2em sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img id="header-icon" src="media/favicon.png" alt="Icon">
+        <div>
+            <h1>Gloria Kamwanya Mukendi</h1>
+            <h3>Software Developer | Tutor | Social Media Coordinator</h3>
+        </div>
+    </header>
+
+    <!-- 2. Navigation Menu -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section>
+        <div id="section2">
+            <img class="pic1" src="media/me.png" alt="Image Of Me">
+            <div>
+                <h1>
+                    <div style="color: purple;">
+                        About Me
+                    </div>
+                </h1>
+                <p class="sct2txt">
+                    Hi, I am Gloria Kamwanya Mukendi, a 21-year-old  driven by a profound passion for problem-solving
+                    and global impact. Graduating with excellence from LEAP Science And Maths School GaRankuwa in 2021, I
+                    thrived in prestigious competitions such as the Sasol Solar Car Challenge and the Junior World Robotics
+                    Olympiads, refining both my tech skills and presentation prowess. Pursuing a Systems Development NQF5 at
+                    WeThinkCode_, I immersed myself in a work-simulating environment, showcasing readiness for the
+                    professional realm. Beyond coding, I am a versatile Social Media Coordinator and Mentor, embodying a
+                    holistic approach to team success. My journey exemplifies relentless pursuit, proactive
+                    problem-solving, and a commitment to making a meaningful impact. 
+                    <br>
+                    <br>
+                    Join Me on this transformative journey
+                    of innovation and positive change.
+                    <br>
+                    <br>
+                    <a href="resume.html">
+                        <button><strong>View Resume</strong></button>
+                    </a>
+                </p>
+            </div>
+            <img class="gif1" src="media/typing.gif" alt="Typing GIF">
+           
+        </div>
+        
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 K.G Mukendi. All Rights Reserved.</p>
+        <p>Privacy Policy | Terms of Use</p>
+    </footer>
+
+</body>
+
+</html>
